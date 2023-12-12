@@ -95,7 +95,7 @@ if(arrow1 && arrow2 && arrow3) {
 
 // ---------------------------- background animation --------------------------------
 
-const particle = document.getElementById('#particles-js');
+const particle = document.getElementById('particles-js');
 
 if (particle) {
   particlesJS("particles-js", {
