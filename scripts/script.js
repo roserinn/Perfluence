@@ -81,13 +81,16 @@ const arrow1 = document.getElementById('arrow1');
 const arrow2 = document.getElementById('arrow2');
 const arrow3 = document.getElementById('arrow3');
 
+if(arrow1 && arrow2 && arrow3) {
+	
+  const animation1 = createBlinkingAnimation(arrow1);
+  const animation2 = createBlinkingAnimation(arrow2);
+  const animation3 = createBlinkingAnimation(arrow3);
 
-const animation1 = createBlinkingAnimation(arrow1);
-const animation2 = createBlinkingAnimation(arrow2);
-const animation3 = createBlinkingAnimation(arrow3);
 
+  gsap.timeline().add(animation1).add(animation2, '-=0.3').add(animation3, '-=0.5');
+}
 
-gsap.timeline().add(animation1).add(animation2, '-=0.3').add(animation3, '-=0.5');
 
 
 // ---------------------------- background animation --------------------------------
