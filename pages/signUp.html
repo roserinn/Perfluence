@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../img/main/Logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/intlTelInput.min.css">
+  <link rel="stylesheet" href="../styles/registration.css">
+  <title>Реєстрація</title>
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="header__container">
+
+      <div class="header__logo">
+        <img src="../img/sing__up/Logo.png" alt="logo">
+
+        <h2 class="header__title">
+          Perfluence
+        </h2>
+      </div>
+
+      <nav class="header__navigation">
+        <ul class="navigation__list">
+          <li class="list__link"><a class="active" href="/index.html">Головна</a></li>
+          <li class="list__link"><a href="./brands.html">Для брендів</a></li>
+          <li class="list__link"><a href="./bloggers.html">Для блогерів</a></li>
+          <li class="list__link"><a href="./techSupp.html">Технічна підтримка</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__language">
+
+        <img src="../img/sing__in/icons/globe.svg" alt="globe">
+
+        <nav class="language__selector">
+          <button class="selected__language">Українська</button>
+          <ul class="language__list">
+            <li class="language__item" data-lang="En">English</li>
+          </ul>
+        </nav>
+
+        <img src="../img/sing__in/icons/bxs_up-arrow.svg" alt="arrowDown">
+      </div>
+
+    </div>
+
+
+  </header>
+  <main class="wrapper">
+    <section class="signUp__form">
+      <div class="form__container">
+
+        <div class="img__block">
+          <img class="logo" src="../img/sing__up/Logo.png" alt="Logo">
+          <img src="../img/sing__up/signUp.png" alt="signUp">
+        </div>
+
+        <div class="form__block">
+          <div class="block__header">
+            <div class="header__language">
+
+              <img src="../img/sing__in/icons/ukr.png" alt="globe">
+
+              <nav class="language__selector">
+                <button class="selected__language">Українська</button>
+                <ul class="language__list">
+                  <li class="language__item" data-lang="en">English</li>
+                </ul>
+              </nav>
+
+              <img src="../img/sing__up/icons/down.svg" alt="arrowDown">
+            </div>
+
+            <a href="../pages/signIn.html" class="header__button">
+              Увійти
+            </a>
+          </div>
+
+          <div class="block__body">
+            <h1 class="body__title">
+              Зареєструватися
+            </h1>
+            <h2 class="body__subtitle">
+              Вже є аккаунт? <a href="../pages/signIn.html">Увійти!</a>
+            </h2>
+
+            <div class="info__message">
+              <p class="message">Для реєстрації в системі потрібно мати мінімум 500 підписників</p>
+              <div class="message__block">
+                <img src="../img/sing__up/icons/sherry.png" alt="sherry">
+                <p>Якщо у вас менше, вам підійде додаток <a href="#">Шеррі</a></p>
+                <img src="../img/sing__up/icons/QuestionMark.svg" alt="QuestionMark">
+              </div>
+            </div>
+
+            <div class="phone__block">
+              <input id="phone" />
+            </div>
+
+            <div class="capcha">
+              <div class="g-recaptcha" data-sitekey="0"></div>
+            </div>
+
+            <a href="../pages/profile.html" class="signUp__button">Зареєструватися</a>
+            <hr>
+
+            <div class="social__networks">
+              <a href="#"><img src="../img/sing__up/icons/google.png" alt="google"></a>
+              <a href="#"><img src="../img/sing__up/icons/facebook.png" alt="facebook"></a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+
+      <small class="footer__text">
+        copyright © Perfluence 2023
+      </small>
+
+      <div class="footer__logo">
+        <img src="../img/main/Logo.png" alt="Logo">
+      </div>
+      <div class="footer__info">
+        <p class="footer__text">
+          Ми у соцмережах:
+        </p>
+
+        <div class="footer__social__networks">
+          <a href="#"><img src="../img/footer/blueIcons/telegram.png" alt="telegram"></a>
+          <a href="#"><img src="../img/footer/blueIcons/instagram.png" alt="instagram"></a>
+          <a href="#"><img src="../img/footer/blueIcons/facebook.png" alt="facebook"></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../scripts/intlTelInput.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

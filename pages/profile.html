@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/main/Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/pages.css">
+  <title>Профіль</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container">
+
+      <div class="header__logo">
+       <a href="../index.html"><img src="../img/sing__up/Logo.png" alt="logo"></a> 
+
+        <h2 class="header__title">
+          Perfluence
+        </h2>
+      </div>
+
+      <div class="header__row">
+        <div class="elem">
+          <img src="../img/offers/timer.svg" alt="timer">
+          <p>43959.00$</p>
+          <img src="../img/offers/down__arrow.svg" alt="arrow">
+        </div>
+
+        <div class="elem">
+          <img src="../img/offers/wellet.svg" alt="wellet">
+          <p>271394.93$</p>
+          <img src="../img/offers/down__arrow.svg" alt="arrow">
+        </div>
+
+        <div class="elem">
+          <img src="../img/offers/clock.svg" alt="clock">
+          <p>UTC +0</p>
+          <img src="../img/offers/down__arrow.svg" alt="arrow">
+        </div>
+
+        <div class="user__info">
+          <a href="./profile/profile3.html" class="user__email">
+            webmaster@cpabro.vip
+          </a>
+
+          <div class="user__ava">
+            <img src="../img/offers/userimg.svg" alt="ava">
+          </div>
+
+          <button class="exit">
+          <a href="../pages/signIn.html"><img src="../img/offers/log-out.svg" alt="log-out"></a>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="wrapper">
+
+    <aside>
+
+      <nav class="aside__navigation">
+        <ul class="navigation__list">
+          <li><a href="../pages/summary.html"><img src="../img/offers/aside__icons/home.svg" alt="Home"> <span>Підсумки</span></a></li>
+          <li><a href="../pages/analytics.html"><img src="../img/offers/aside__icons/graph.svg" alt="Statistic"> <span>Статистика</span></a>
+          </li>
+          <li><a  href="../pages/tools.html"><img src="../img/offers/aside__icons/key.svg" alt="Tools"> <span>Інструменти</span></a></li>
+          <li><a  href="../pages/finance.html"><img src="../img/offers/aside__icons/coins.svg" alt="Finance"> <span>Фінанси</span></a></li>
+        </ul>
+
+        <ul class="navigation__list">
+          <li><a href="../pages/news.html"><img src="../img/offers/aside__icons/news.svg" alt="News"> <span>Новини</span></a></li>
+          <li><a  href="../pages/offers.html"><img src="../img/offers/aside__icons/offer.png" alt="Offers"> <span>Пропозиції</span></a></li>
+        </ul>
+
+        <ul class="navigation__list">
+          <li><a class="active" href="../pages/profile.html"><img src="../img/offers/aside__icons/user.svg" alt="Profile">
+              <span>Профіль</span></a></li>
+          <li><a href="../pages/notification.html"><img src="../img/offers/aside__icons/bell.svg" alt="Notifications">
+              <span>Сповіщення</span></a></li>
+          <li><a href="#"><img src="../img/offers/aside__icons/support.svg" alt="Support"> <span>Підтримка</span></a></li>
+        </ul>
+      </nav>
+
+    </aside>
+    <section class="profile">
+      <div class="profile__container">
+
+        <div class="cancel">
+          <p>Скасувати</p>
+          <img src="../img/profile/cross.svg" alt="cross">
+        </div>
+
+        <div class="profile__info">
+          <img src="../img/profile/user__ava.svg" alt="ava" class="profile__logo">
+
+          <form>
+            <div class="inline__inputs">
+              <div>
+                <label for="firstName">Ім'я</label>
+                <input type="text" id="firstName" name="firstName" value="Arthur" required>
+              </div>
+              <div>
+                <label for="lastName">Фамілія</label>
+                <input type="text" id="lastName" name="lastName" value="Arthur" required>
+              </div>
+            </div>
+
+            <div class="password__container">
+              <label for="password">Пароль</label>
+              <input type="password" id="password" name="password" value="jdgksdgjdkgsdkg" required>
+              <a href="#" class="change__password__link">ЗМІНИТИ ПАРОЛЬ</a>
+            </div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="anymail.any@gmail.com" required>
+
+            <label for="profile_phone">Номер телефону</label>
+            <input type="tel" id="profile_phone" name="phone" value="477-046-1827" required>
+
+            <label for="address">Адреса</label>
+            <input type="text" id="address" name="address" value="116 Jaskolski Stravenue Suite 883" required>
+
+            <label for="nation">Національність</label>
+            <input type="text" id="nation" name="nation" value="Colombia" required>
+
+          </form>
+
+        </div>
+
+        <div class="profile__info">
+          <form>
+            <div class="inline__inputs">
+              <div>
+                <label for="gender_1">Гендер</label>
+                <select id="gender_1" name="gender" class="gender" required>
+                  <option value="male">Чоловік</option>
+                  <option value="female">Жінка</option>
+                </select>
+              </div>
+              <div>
+                <label for="gender_2">Гендер</label>
+                <select id="gender_2" name="gender" class="gender" required>
+                  <option value="male">Чоловік</option>
+                  <option value="female">Жінка</option>
+                </select>
+              </div>
+
+            </div>
+            <div>
+              <label for="day">Дата народження</label>
+
+              <select id="day" name="day">
+              </select>
+
+              <select id="month" name="month">
+                <option value="Грудень">Грудень</option>
+                <option value="Січень">Січень</option>
+                <option value="Лютий">Лютий</option>
+                <option value="Березень">Березень</option>
+                <option value="Квітень">Квітень</option>
+                <option value="Травень">Травень</option>
+                <option value="Червень">Червень</option>
+                <option value="Липень">Липень</option>
+                <option value="Серпень">Серпень</option>
+                <option value="Вересень">Вересень</option>
+                <option value="Жовтень">Жовтень</option>
+                <option value="Листопад">Листопад</option>
+              </select>
+
+              <select id="year" name="year">
+              </select>
+
+            </div>
+
+            <div class="inline__inputs">
+              <div>
+                <label for="twitter">Twitter:</label>
+                <input type="text" id="twitter" name="twitter" value="twitter.com/anylink">
+              </div>
+              <div>
+                <label for="linkedin">LinkedIn:</label>
+                <input type="text" id="linkedin" name="linkedin" value="linkedin.com/anylink">
+              </div>
+            </div>
+
+            <div class="inline__inputs">
+              <div>
+                <label for="facebook">Facebook:</label>
+                <input type="text" id="facebook" name="facebook" value="facebook.com/anylink">
+              </div>
+              <div>
+                <label for="google">Google:</label>
+                <input type="text" id="google" name="google" value="Any nickname">
+              </div>
+            </div>
+
+            <label for="slogan">Слоган</label>
+            <input type="text" id="slogan" name="slogan" value="Any good slogan to anything">
+
+          </form>
+
+          <div class="payment">
+            <p class="payment__title">Способи оплати:</p>
+            <div class="payment__method">
+              <div class="card">
+                <div class="card__info">
+                  <img src="../img/profile/294654_visa_icon.svg" alt="visa" class="card__logo">
+                  <div class="info">
+                    <p class="card__num">
+                      Master... 8314
+                    </p>
+                    <p class="card__date">
+                      Expires 07/19
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card__footer">
+                  <button class="remove__card">Прибрати</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__info">
+                  <img src="../img/profile/mc_symbol.svg" alt="mc" class="card__logo">
+                  <div class="info">
+                    <p class="card__num">
+                      Master... 8314
+                    </p>
+                    <p class="card__date">
+                      Expires 07/19
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card__footer">
+                  <button class="remove__card">Прибрати</button>
+                </div>
+              </div>
+
+              <div class="add__card">
+                <img src="../img/profile/wellet.svg" alt="wellet" class="add__icon">
+                <p>ДОДАТИ СПОСІБ ОПЛАТИ</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+
+      <small class="footer__text">
+        copyright © Perfluence 2023
+      </small>
+
+      <div class="footer__logo">
+        <img src="../img/main/Logo.png" alt="Logo">
+      </div>
+      <div class="footer__info">
+        <p class="footer__text">
+          Ми у соцмережах:
+        </p>
+
+        <div class="footer__social__networks">
+          <a href="#"><img src="../img/footer/blueIcons/telegram.png" alt="telegram"></a>
+          <a href="#"><img src="../img/footer/blueIcons/instagram.png" alt="instagram"></a>
+          <a href="#"><img src="../img/footer/blueIcons/facebook.png" alt="facebook"></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
